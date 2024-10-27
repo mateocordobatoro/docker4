@@ -2,12 +2,12 @@ name: Azure Container Registry
 
 on:
   push:
-    branches: 
+    branches:
       main
 
 env:
   IMAGE_NAME: docker-demo-two
-  
+
 jobs:
   build:
     name: Build container image
@@ -25,6 +25,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{secrets.ACR_ENDPOINT}}/${{ env.IMAGE_NAME}}
-          
-          
+          tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}
