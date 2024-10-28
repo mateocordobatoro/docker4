@@ -9,6 +9,26 @@ options(shiny.port = 8180)
 
 
 ui <- fluidPage(
+  
+  tags$nav(
+    class = "navbar navbar-expand-lg",
+    style = "background-color: blue; color: white;",
+    tags$div(
+      class = "container",
+      tags$a(
+        class = "navbar-brand me -auto",
+        href = "#",
+        "App"
+      ),
+      
+      tags$div(
+        class = "mx-auto",
+        tags$h1("Gapminder Dashboard", style = "color: white; text-align: center;"),
+      )
+    )
+  ),
+  
+  
   sidebarLayout(
     sidebarPanel(
       tags$h4("Gapminder Dashboard"),
