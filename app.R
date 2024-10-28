@@ -18,7 +18,7 @@ ui <- fluidPage(
       tags$a(
         class = "navbar-brand me -auto",
         href = "#",
-        "App"
+        "App 22222222222222222"
       ),
       
       tags$div(
